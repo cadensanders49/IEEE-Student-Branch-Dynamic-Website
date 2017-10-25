@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,14 +13,14 @@
     <title>IEEE Texas State</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="{% static 'css/landing-page.css' %}" rel="stylesheet">
 
   </head>
 
@@ -34,13 +36,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="{% url 'events' %}">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="{% url 'members' %}">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
           </ul>
         </div>
@@ -93,7 +98,7 @@
             </p>
           </div>
           <div class="col-lg-5 mr-auto">
-            <img class="d-block rounded img-thumbnail mt-xl-4 ml-xl-3 mt-lg-5" src="img/bob-build-2.png" alt="Robot">
+            <img class="d-block rounded img-thumbnail mt-xl-4 ml-xl-3 mt-lg-5" src="{% static 'img/bob-build-2.png' %}" alt="Robot">
           </div>
         </div>
 
@@ -115,7 +120,7 @@
               as well as the furtherance of the professional development of the Students.</p>
           </div>
           <div class="col-lg-5 ml-auto order-lg-1">
-            <img class="img-fluid rounded img-thumbnail mt-lg-3 mt-xl-0" src="img/student-2.png" alt="">
+            <img class="img-fluid rounded img-thumbnail mt-lg-3 mt-xl-0" src="{% static 'img/student-2.png' %}" alt="">
           </div>
         </div>
 
@@ -138,7 +143,7 @@
             every Monday night.</p>
           </div>
           <div class="col-lg-5 mr-auto ">
-            <img class="img-fluid rounded img-thumbnail mt-lg-3 mt-xl-0" src="img/soccer-1.png" alt="">
+            <img class="img-fluid rounded img-thumbnail mt-lg-3 mt-xl-0" src="{% static 'img/soccer-1.png' %}" alt="">
           </div>
         </div>
 
@@ -195,15 +200,19 @@
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#about">About</a>
+            <a href="{% url 'about' %}">About</a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#services">Services</a>
+            <a href="{% url 'events' %}">Events</a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
-            <a href="#contact">Contact</a>
+            <a href="{% url 'members' %}">Members</a>
+          </li>
+          <li class="footer-menu-divider list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="{% url 'contact' %}">Contact</a>
           </li>
         </ul>
         <p class="copyright text-muted small">Copyright &copy; IEEE 2017. All Rights Reserved</p>
@@ -211,8 +220,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
   </body>
 
