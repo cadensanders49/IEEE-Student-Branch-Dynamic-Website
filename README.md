@@ -21,10 +21,6 @@ What things you need to install the software and how to install them:
 
 * [Django](https://www.djangoproject.com/download/ "Django Download")
 
-```
-Give examples
-```
-
 
 ### Installing
 
