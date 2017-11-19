@@ -13,13 +13,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them:
 
-⋅⋅* [Git](https://git-scm.com/downloads "Download Git")
+* [Git](https://git-scm.com/downloads "Download Git")
 
-⋅⋅* [Python 2.7.13](https://www.python.org/downloads/release/python-2713/ "Python Download")
+* [Python 2.7.13](https://www.python.org/downloads/release/python-2713/ "Python Download")
 
-⋅⋅* [Pip](https://pypi.python.org/pypi/pip "Pip Download")
+* [Pip](https://pypi.python.org/pypi/pip "Pip Download")
 
-⋅⋅* [Django](https://www.djangoproject.com/download/ "Django Download")
+* [Django](https://www.djangoproject.com/download/ "Django Download")
 
 ```
 Give examples
