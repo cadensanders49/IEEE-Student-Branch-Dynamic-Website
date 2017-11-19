@@ -46,11 +46,6 @@ Now, go to your web browser and go to this address:
 When a pull request is merged, the server will be updated with the new code as soon as possible.
 
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-
 ## Authors
 
 * **Caden Sanders** - *Initial work* - [Profile](https://github.com/cadensanders49)
